@@ -10,7 +10,7 @@ process.env.VERSION = packageJson.version;
 const mongoose = require('mongoose');
 mongoose.set('strictQuery', false);
 
-process.env.HUBSPOT_ACCESS_TOKEN = 'pat-na1-b8c2452a-ccff-4827-8368-2cc4f6038bb9';
+const { HUBSPOT_ACCESS_TOKEN } = process.env;
 
 mongoose
   .connect(
